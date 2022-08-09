@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenzieFood - Registrar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/styleRegister.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="kenzie-logo">Kenzie</span>
+            <span class="food-logo">Food</span>
+        </nav>
+    </header>
+    <main>
+        <div class="div-form">
+           <form autocomplete="off" class="login" id="form-register">
+               <h3 class="error">Email já está em uso!</h3>
+                <div class="div-name">
+                    <label class="label-name" for="name">Usuário</label>
+                    <input  id="name" class="name" name="name" type="text"  required>
+                </div>
+               <div class="div-email">
+                   <label class="label-email" for="email">Email</label>
+                   <input  id="email" class="email" name="email" type="email"  required>
+               </div>
+               <div class="div-password">
+                   <label id="label-password" class="label-password" for="password">Senha</label>
+                   <input id="password" class="password" name="password" type="password"  required>
+               </div>
+               <div class="div-submit">
+                   <input id="enter-button" class="enter-button" name="button" type="submit" value="Registrar">
+               </div>
+           </form>
+        </div>
+       <div class ="div-button">
+          <button id="login" >Login</button>
+          <button id="skip-register">Prosseguir sem cadastrar</button>
+        </div>
+   </main>
+    <footer>
+        <p>Todos os direitos reservados kenzie Food</p>
+    </footer>
+    <script type="module" src="../js/register.js"></script>
+</body>
+</html>

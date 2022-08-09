@@ -1,0 +1,66 @@
+.modalCar{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    left: 0px;
+    top: 0px;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    background-color: white;
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+
+}
+
+.headerCar{
+    width: 95%;
+    height: 60px;
+    background-color: #FF2253;
+    position: relative;
+    color: white;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    gap: 10px;
+}
+
+.close{
+    color: white;
+    border: none;
+    background-color: #FF2253 ;
+   position: absolute;    
+   right: 20px;
+   font-weight: 700;
+}
+
+
+.ProductCar {
+    height: 74%;
+    overflow-Y: scroll;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    row-gap: 15px;
+    align-items: center;
+}
+
+.divFooter > div{
+    height: 50px;
+    width: 100%;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;    
+    box-sizing: border-box;
+}
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenzieFood - Home</title>
+    <link rel="stylesheet" href="/Src/styles/reset.css">
+    <link rel="stylesheet" href="/Src/styles/styleHome.css">
+    <link rel="stylesheet" href="/Src/styles/styleCarrinhoMobile.css">
+    <link rel="stylesheet" href="/Src/styles/styleDashboard.css">
+    <link rel="stylesheet" href="/Src/styles/styleModalLogin.css">
+    <script src="https://kit.fontawesome.com/2a04b48054.js"></script>
+    <script defer type="module" src="/Src/js/home.js"></script>
+</head>
+<body>
+    <header>
+        <div class="contentHeader">
+            <div class="logo">
+                <h1>Kenzie</h1>
+                <h2>Food</h2>
+                <button class="profile" id="profile">
+                    <i id="profile-icon" class="fa-regular fa-circle-user"></i>
+                </button>
+            </div>  
+            <input name="search" type="search" class="boxSearch" id="textBox"  value="" placeholder="Pesquisar por produto" "/> 
+        </div>
+    </header>
+    <main>
+            <div class="modalSearchBar" id="modalSearchBar">
+
+                <div class="barCamp" id="barCamp">
+                    
+                </div>
+                
+            </div>
+        <div class="main-container">
+            <div id="categories" class="category">
+                <button id="todos" class="tag tag--active ">Todos</button>
+                <button id="panificadora" class="tag panificadora">
+                    <span>🥖</span>
+                    <span>Panificadora</span>
+                </button>
+                <button id="frutas" class="tag frutas">
+                    <span>🍍</span>
+                    <span>Frutas</span>
+                </button>
+                <button id="bebidas" class="tag bebidas">
+                    <span>🍷</span>
+                    <span>Bebidas</span>
+                </button>
+            </div>
+            <div class="container" id="container">
+                
+            </div>
+        </div>
+        <div class="desktop-cart" id="desktop-cart">
+            <div class="cart-header">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+                <h3>Carrinho</h3>
+            </div>
+
+            <div class="cart-body" id="ProductCar">
+                <div class="empty-cart" id="empty-cart">
+                    <i id="basket-icon" class="fa-solid fa-basket-shopping"></i>
+                    <h3>Por enquanto não temos produto no carrinho</h3>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-amount">
+                    <span>Quantidade</span>
+                    <h3 id="cartQuantity" class="cart-quantity"></h3>
+                </div>
+                <div class="cart-total">
+                    <span>Total</span>
+                    <h3 id="cartTotal" class="cart-totalValue"></h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button  class="cart" id="cart">
+            <span>🛒</span>
+            <h2>Carrinho</h2>
+        </button>
+    </footer>
+
+    <div id="modalCar" class="modalCar">
+        <div class="modal"> 
+            <div class="headerCar">
+                <span>🛒</span>
+                <h2>Carrinho</h2>  
+                <button class="close" id="close">X</button>
+            </div>
+            <div class="ProductCar" id="ProductCar">
+                
+            </div>
+            <div class="divFooter">
+                <div class="amount">
+                    <h3>Quantidade:</h3><span id="cartQuantity"></span>
+                </div>
+                <div class="total">
+                    <h3>Total:</h3><span id="cartTotal"></span>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="modalDashboard" id="modalDashboard">
+        <div class="dashboard--header">
+            <h2>Dashboard</h2>
+            <button class="closeDashboard" id="closeDashboard">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+        <div class="dashboard--body">
+        </div>
+        <div class="dashboard--footer">
+            <button class="addProduct" id="addProductDash">
+                Adicionar Produto
+            </button>
+            <button class="editProduct" id="editProduct">
+                Meus Produtos
+            </button>
+            <button class="userLogout" id="userLogout">
+                Encerrar sessão
+            </button>
+        </div>
+    </div>
+
+    <div class="modalSuccess" id="modalSuccess">
+        <div class="success-header">
+            <i id="closeModal" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="success-body">
+            <h2 class="success-h2" id="success-h2"></h2>
+        </div>
+    </div>
+
+    <div class="loginModal" id="loginModal">
+        <div class="login-header">
+        </div>
+        <div class="login-body">
+            <h2 class="login-h2" id="login-h2">Retornar a tela de login?</h2>
+            <div class="login-buttons">
+                <button id="yes">Sim</button>
+                <button id="no">Não</button>
+            </div>
+        </div>
+    </div>
+
+<script type="module" src="../models/carrinhoScript.js"></script>
+<script type="module" src="../js/carroselDOM.js"></script>
+<script type="module" src="../js/cartDOM.js"></script>
+<script type="module" src="../controllers/Cards.js"></script>
+
+</body>
+</html>

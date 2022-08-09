@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Src/styles/reset.css">
+    <link rel="stylesheet" href="./Src/styles/style.css">
+    <title>KenzieFood</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="kenzie-logo">Kenzie</span>
+            <span class="food-logo">Food</span>
+        </nav>
+    </header>
+     <main>
+         <div class="div-form">
+            <form autocomplete="off" class="login" id="form-login">
+                <h3 class="errorPassword">Senha incorreta.</h3>
+                <h3 class="error">Email não existe.</h3>
+                <div class="div-email">
+                    <label class="label-email" for="email">Email</label>
+                    <input  id="email" class="email" name="email" type="email"  required>
+                </div>
+                <div class="div-password">
+                    <label id="label-password" class="label-password" for="password">Senha</label>
+                    <input id="password" class="password" name="password" type="password"  required>
+                </div>
+                <div class="div-submit">
+                    <input id="enter-button" class="enter-button" name="button" type="submit" value="Entrar">
+                </div>
+            </form>
+         </div>
+        <div class ="div-button">
+           <button id="register" >Cadastrar-se</button>
+           <button id="skip-register">Prosseguir sem cadastrar</button>
+         </div>
+    </main>
+    <footer>
+        <span>Todos os direitos reservados @ Kenzie Food</span>
+    </footer>
+    <script type="module"  src="./Src/js/script.js"></script>
+</body>
+</html>
